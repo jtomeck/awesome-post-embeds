@@ -70,3 +70,6 @@ A WordPress plugin for embedding posts from another Wordpress blog into your sit
   ```
   new_tab="false"
   ```
+
+## Contributions/Inspirations:
+* [Dan LaManna](https://github.com/danlamanna)
