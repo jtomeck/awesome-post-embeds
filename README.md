@@ -2,7 +2,7 @@
 A WordPress plugin for embedding posts from another Wordpress blog into your site
 
 ## Shortcode format
-[awesome_post_embeds url="YourURLHere.com"]
+[ape_posts url="YourURLHere.com"]
 
 ## Shortcode parameters
 * ### url
