@@ -5,16 +5,18 @@
 
 .ape_posts_wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .ape_post {
     border: 1px solid #c6d1d6;
     border-radius: 5px;
+    flex-grow: 1;
     margin: 10px;
     overflow: hidden;
     position: relative;
     transition: all .15s ease-in-out;
-    width: 33.33%;
+    width: 30%;
 }
 
 .ape_post:hover {
@@ -88,6 +90,7 @@
 
     .ape_post {
         display: flex;
+        margin-bottom:20px;
         width: 100%;
     }
 
@@ -120,7 +123,7 @@
 
     .ape_post {
         display: block;
-        width: 100%;
+        width: auto;
     }
 
     .ape_post_image_wrapper {
