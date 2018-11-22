@@ -27,8 +27,8 @@ A WordPress plugin for embedding posts from another Wordpress blog into your sit
   image="false"
   ```
 * ### image_size
-  Available options include `thumbnail`, `medium`, `medium_large`, `large`, and `full`. Defaults to `medium`.
-  
+  Available options include `thumbnail`, `medium`, `medium_large`, `large`, and `full`. Defaults to `full`.
+
   _NOTE: This is mostly for page speed or image quality purposes as the plugin CSS handles this by default._
 
   __Example:__

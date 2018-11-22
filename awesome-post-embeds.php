@@ -74,7 +74,7 @@ function ape_posts_func( $atts ) {
     'title' => true,
     'excerpt' => true,
     'new_tab' => true,
-    'image_size' => 'medium',
+    'image_size' => 'full',
   ), $atts, 'ape_posts' );
 
   // ob_start to allow returning of multiple lines of PHP/HTML
