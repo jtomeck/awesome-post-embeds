@@ -82,7 +82,7 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 959px) {
 
     .ape_posts_wrapper {
         display: block;
