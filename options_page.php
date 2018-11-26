@@ -5,7 +5,7 @@ add_action( 'admin_init', 'ape_settings_init' );
 
 function ape_add_admin_menu() {
 
-  add_menu_page( 'Awesome Post Embeds', 'Awesome Post Embeds', 'manage_options', 'awesome_post_embeds', 'ape_options_page' );
+  add_menu_page( 'Awesome Post Embeds', 'Awesome Post Embeds', 'manage_options', 'awesome_post_embeds', 'ape_options_page', 'dashicons-editor-code' );
 
 }
 
