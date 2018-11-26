@@ -1,8 +1,12 @@
 # awesome-post-embeds
-A WordPress plugin for embedding posts from another Wordpress blog into your site
+A WordPress plugin that adds a shortcode for embedding posts from another Wordpress blog into your site. 
+
+I've added a Shortcode Generator so you don't have to memorize the shortcode parameters!
 
 ## Shortcode format
-[ape_posts url="YourURLHere.com"]
+The basic shortcode format is `[ape_posts url="YourURLHere.com"]`
+
+Below are the parameters you can pass into the shortcode, however if you don't want to have to remember them, you may use the shortcode generator in your wp-admin.
 
 ## Shortcode parameters
 * ### url
