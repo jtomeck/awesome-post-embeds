@@ -1,0 +1,25 @@
+/*
+ * ADMIN STYLES
+ * Styles for the Shortcode Generator in wp-admin
+ */
+
+.ape_shortcode_generator .form-table {
+    border-top: 1px solid #cccccc;
+    margin-top: 15px;
+}
+
+.ape_shortcode_generator label {
+    display: block;
+    font-size: 11px;
+    font-style: italic;
+    padding-top: 3px;
+}
+
+.ape_generated {
+    background: #e5efe7;
+    border: 3px dotted #b5e3bd;
+    color: #488252;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px;
+}

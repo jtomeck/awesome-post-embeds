@@ -13,10 +13,21 @@
 * INCLUDE PLUGIN STYLES
 */
 function ape_enqueue_styles() {
-    $plugin_url = plugin_dir_url( __FILE__ );
-    wp_enqueue_style( 'style',  $plugin_url . "/style.css");
+  $plugin_url = plugin_dir_url( __FILE__ );
+  wp_enqueue_style( 'style',  $plugin_url . "/style.css");
 }
 add_action( 'wp_enqueue_scripts', 'ape_enqueue_styles' );
+
+/*
+* INCLUDE PLUGIN ADMIN STYLES
+*/
+function load_admin_style() {
+  $plugin_url = plugin_dir_url( __FILE__ );
+  wp_enqueue_style( 'admin_css', $plugin_url . '/admin-styles.css' );
+}
+add_action( 'admin_enqueue_scripts', 'load_admin_style' );
+
+include( 'options_page.php' );
 
 /*
 * TAGS FUNCTION
