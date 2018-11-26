@@ -202,9 +202,9 @@ function ape_options_page(  ) {
     if( !empty( $_POST['ape_settings'][$value] ) ) {
       $shortcode_val = $_POST['ape_settings'][$value];
       if( $shortcode_val == '1' && $key != 'count' ) {
-        $shortcode_args .= " $key=\"false\" ";
+        $shortcode_args .= " $key=\"false\"";
       }else{
-        $shortcode_args .= " $key=\"$shortcode_val\" ";
+        $shortcode_args .= " $key=\"$shortcode_val\"";
       }
     }
   }
