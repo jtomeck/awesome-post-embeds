@@ -113,34 +113,35 @@ function ape_posts_func( $atts ) {
       $blog_posts = json_decode( file_get_contents( $query_url ) ); ?>
 
       <div id="awesome_post_embed" class="ape_posts_container">
+
         <div class="ape_posts_wrapper">
 
           <?php foreach ( $blog_posts as $blog_post ) : ?>
 
             <div class="ape_post">
 
-              <?php if( $atts['image'] == true ) : ?>
+              <?php if( $atts['image'] == 'true' ) : ?>
                 <div class="ape_post_image_wrapper">
                   <?php if( ( $image_src = embed_url_from_post( $blog_post, $atts['image_size'] ) ) != null ) : ?>
-                    <a href="<?php echo $blog_post->link; ?>" <?php if( $atts['new_tab'] == true ) { echo 'target="_blank"'; } ?> >
+                    <a href="<?php echo $blog_post->link; ?>" <?php if( $atts['new_tab'] == 'true' ) { echo 'target="_blank"'; } ?> >
                       <img src="<?php echo $image_src; ?>" class="ape_post_image">
                     </a>
                   <?php endif ?>
                 </div>
               <?php endif; //if image ?>
 
-              <?php if( $atts['title'] == true || $atts['excerpt'] == true ) : ?>
+              <?php if( $atts['title'] == 'true' || $atts['excerpt'] == 'true' ) : ?>
                 <div class="ape_post_content">
 
-                  <?php if( $atts['title'] == true ) : ?>
+                  <?php if( $atts['title'] == 'true' ) : ?>
                     <h3 class="ape_post_title">
-                      <a href="<?php echo $blog_post->link; ?>" <?php if( $atts['new_tab'] == true ) { echo 'target="_blank"'; } ?> >
+                      <a href="<?php echo $blog_post->link; ?>" <?php if( $atts['new_tab'] == 'true' ) { echo 'target="_blank"'; } ?> >
                         <?php echo $blog_post->title->rendered; ?>
                       </a>
                     </h3>
                   <?php endif; //if title ?>
 
-                  <?php if( $atts['excerpt'] == true ) : ?>
+                  <?php if( $atts['excerpt'] == 'true' ) : ?>
                     <p><?php echo $blog_post->excerpt->rendered; ?></p>
                   <?php endif; //if excerpt ?>
                 </div>
