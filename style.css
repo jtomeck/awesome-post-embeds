@@ -9,6 +9,7 @@
 }
 
 .ape_post {
+    background: #ffffff;
     border: 1px solid #c6d1d6;
     border-radius: 5px;
     flex-grow: 1;
